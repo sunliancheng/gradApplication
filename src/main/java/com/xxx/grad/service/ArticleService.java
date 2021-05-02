@@ -13,7 +13,6 @@ public class ArticleService {
     @Autowired
     private ArticleMapper articleMapper;
 
-
     public List<Article> select(QueryWrapper<Article> queryWrapper) {
         return articleMapper.selectList(queryWrapper);
     }
