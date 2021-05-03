@@ -16,7 +16,7 @@ public class MyApplication {
     public static void main (String[] args) throws Exception  {
         ApplicationContext ctx = SpringApplication.run(MyApplication.class, args);
         //System.out.println(ctx.getBean("corsConfig"));
-        System.out.println(ctx.getBean("mySessionService"));
+        System.out.println(("********** 应用启动成功 **********"));
         new CountDownLatch(2).await();
     }
 }
